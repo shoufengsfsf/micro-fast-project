@@ -9,10 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>micro-fast-Demo</artifactId>
+    <artifactId>micro-fast-demo</artifactId>
     <description>快速开发框架使用案例</description>
     <modules>
-        <module>micro-fast-Demo-db</module>
+        <module>micro-fast-demo-db</module>
     </modules>
     <packaging>pom</packaging>
 

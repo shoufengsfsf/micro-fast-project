@@ -9,7 +9,7 @@
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>micro-fast-db</module>
-        <module>micro-fast-Demo</module>
+        <module>micro-fast-demo</module>
     </modules>
     <packaging>pom</packaging>
     <description>快速开发脚手架</description>

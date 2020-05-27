@@ -6,7 +6,7 @@
 
 ## 使用说明
 
-具体使用案例请查看：[micro-fast-Demo-db](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-Demo/micro-fast-Demo-db)
+具体使用案例请查看：[micro-fast-demo-db](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-demo/micro-fast-demo-db)
 
 ### 1、添加依赖
 
