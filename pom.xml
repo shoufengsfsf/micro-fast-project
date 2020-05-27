@@ -10,6 +10,7 @@
     <modules>
         <module>micro-fast-db</module>
         <module>micro-fast-demo</module>
+        <module>micro-fast-file</module>
     </modules>
     <packaging>pom</packaging>
     <description>快速开发脚手架</description>

@@ -1,0 +1,13 @@
+version: '3.1'
+services:
+  minio1:
+    image: minio/minio
+    ports:
+      - 9001:9000
+    environment:
+      MINIO_ACCESS_KEY: adminA123
+      MINIO_SECRET_KEY: 12345Aadmin
+    volumes:
+      - /Users/shoufeng/Desktop/minio/data:/data
+      - /Users/shoufeng/Desktop/minio/config:/root/.minio
+    command: server /data
