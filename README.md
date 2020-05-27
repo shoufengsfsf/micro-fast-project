@@ -5,20 +5,20 @@
 
 ## 技术选型
 
-| 模块                 | 选用技术          |
-| -------------------- | ----------------- |
-| 数据库模块           | mybatis-plus      |
-| 权限模块             | jwt               |
-| 日志模块             | logback           |
-| 消息队列模块         | rabbitmq          |
-| 文档模块             | swagger           |
-| 定时任务模块         | xxl-job           |
-| 文件存储模块         | Minio             |
-| 代码生成器模块       |                   |
-| 数据库文档生成器模块 |                   |
-| 应用监控模块         | spring-boot-admin |
-| 注册中心模块         | nacos             |
-| 动态配置模块         | nacos             |
-| 服务调用模块         | fegin、ribbon     |
-| CI/CD模块            | jenkins           |
+| 模块                                                         | 选用技术          |
+| ------------------------------------------------------------ | ----------------- |
+| [数据库模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-db/micro-fast-mybatis-plus-starter) | mybatis-plus      |
+| 权限模块                                                     | jwt               |
+| 日志模块                                                     | logback           |
+| 消息队列模块                                                 | rabbitmq          |
+| 文档模块                                                     | swagger           |
+| 定时任务模块                                                 | xxl-job           |
+| 文件存储模块                                                 | Minio             |
+| 代码生成器模块                                               |                   |
+| 数据库文档生成器模块                                         |                   |
+| 应用监控模块                                                 | spring-boot-admin |
+| 注册中心模块                                                 | nacos             |
+| 动态配置模块                                                 | nacos             |
+| 服务调用模块                                                 | fegin、ribbon     |
+| CI/CD模块                                                    | jenkins           |
 
