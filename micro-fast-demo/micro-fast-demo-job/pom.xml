@@ -26,7 +26,7 @@
 
         <dependency>
             <groupId>com.shoufeng.project</groupId>
-            <artifactId>micro-fast-job-xxl</artifactId>
+            <artifactId>micro-fast-job-xxl-starter</artifactId>
             <version>${project.version}</version>
         </dependency>
 

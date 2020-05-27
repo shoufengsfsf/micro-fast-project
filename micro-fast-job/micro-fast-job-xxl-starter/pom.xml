@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>micro-fast-job-xxl</artifactId>
+    <artifactId>micro-fast-job-xxl-starter</artifactId>
 
     <dependencies>
 
