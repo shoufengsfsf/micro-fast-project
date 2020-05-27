@@ -14,6 +14,7 @@
         <module>micro-fast-job</module>
         <module>micro-fast-log</module>
         <module>micro-fast-common</module>
+        <module>micro-fast-auth</module>
     </modules>
     <packaging>pom</packaging>
     <description>快速开发脚手架</description>
