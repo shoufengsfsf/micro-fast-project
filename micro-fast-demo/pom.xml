@@ -15,6 +15,7 @@
         <module>micro-fast-demo-db</module>
         <module>micro-fast-demo-file</module>
         <module>micro-fast-demo-job</module>
+        <module>micro-fast-demo-log</module>
     </modules>
     <packaging>pom</packaging>
 
