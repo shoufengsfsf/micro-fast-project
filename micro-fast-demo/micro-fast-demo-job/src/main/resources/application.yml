@@ -1,0 +1,38 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 7070
+
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        http-only: false
+
+spring:
+  application:
+    name: fast-demo-job
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+      location: ./data/file
+
+micro:
+  fast:
+    xxljob:
+      enable: true
+      admin-addresses: http://127.0.0.1:8081/xxl-job-admin
+  #    appname: fast-demo
+  #    log-path: /Users/shoufeng/work/fast-rest-project/logs/fast-demo/xxljob/jobhandler
+
+
