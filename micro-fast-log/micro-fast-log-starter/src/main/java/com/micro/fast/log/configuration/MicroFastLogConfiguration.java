@@ -1,8 +1,8 @@
 package com.micro.fast.log.configuration;
 
 import com.micro.fast.log.aspect.SysLogAspect;
-import com.micro.fast.log.configuration.properties.FastLogProperties;
-import com.micro.fast.log.interceptor.FastLogMdcInterceptor;
+import com.micro.fast.log.configuration.properties.MicroFastLogProperties;
+import com.micro.fast.log.interceptor.MicroFastLogMdcInterceptor;
 import com.micro.fast.log.listener.SysLogListener;
 import com.micro.fast.log.service.SysLogService;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnBean;
@@ -25,13 +25,13 @@ import javax.annotation.Resource;
 @ConditionalOnBean(value = {SysLogService.class})
 @ConditionalOnProperty(prefix = "micro.fast.log", name = "enable", havingValue = "true")
 @ComponentScan(value = {"com.micro.fast.log"})
-public class FastLogConfiguration implements WebMvcConfigurer {
+public class MicroFastLogConfiguration implements WebMvcConfigurer {
 
     @Resource
-    private FastLogProperties fastLogProperties;
+    private MicroFastLogProperties fastLogProperties;
 
     @Resource
-    private FastLogMdcInterceptor fastLogMdcInterceptor;
+    private MicroFastLogMdcInterceptor fastLogMdcInterceptor;
 
     @Resource
     private SysLogService sysLogService;

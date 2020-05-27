@@ -1,2 +1,2 @@
 org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.micro.fast.log.configuration.FastLogConfiguration
+  com.micro.fast.log.configuration.MicroFastLogConfiguration

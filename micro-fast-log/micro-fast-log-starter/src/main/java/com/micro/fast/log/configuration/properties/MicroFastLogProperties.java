@@ -16,7 +16,7 @@ import org.springframework.stereotype.Component;
 @NoArgsConstructor
 @AllArgsConstructor
 @ConfigurationProperties(prefix = "micro.fast.log")
-public class FastLogProperties {
+public class MicroFastLogProperties {
 
     /**
      * 是否开启系统日志（默认关闭）

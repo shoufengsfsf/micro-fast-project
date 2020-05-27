@@ -5,7 +5,7 @@ package com.micro.fast.log.constant;
  *
  * @author shoufeng
  */
-public class FastLogConstant {
+public class MicroFastLogConstant {
 
     public static final String REQUEST_SESSION_ID = "SESSION_ID";
     public static final String REQUEST_METHOD = "REQUEST_METHOD";
