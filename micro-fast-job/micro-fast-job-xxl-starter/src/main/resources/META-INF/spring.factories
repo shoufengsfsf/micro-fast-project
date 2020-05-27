@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  com.micro.fast.job.xxl.configuration.MicroFastXxlJobClientConfiguration
