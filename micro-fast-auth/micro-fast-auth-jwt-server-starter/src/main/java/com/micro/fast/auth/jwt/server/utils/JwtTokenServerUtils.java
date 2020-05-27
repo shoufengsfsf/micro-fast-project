@@ -7,6 +7,10 @@ import com.micro.fast.auth.jwt.common.utils.JwtUtils;
 import com.micro.fast.auth.jwt.server.configuration.properties.MicroFastAuthServerProperties;
 import lombok.AllArgsConstructor;
 
+import java.time.LocalDateTime;
+import java.time.ZoneId;
+import java.util.Date;
+
 /**
  * jwt token 工具
  *
@@ -52,5 +56,19 @@ public class JwtTokenServerUtils {
         return JwtUtils.getJwtFromToken(token, userTokenInfo.getPublicKey());
     }
 
+    /**
+     * 距离token过期多少分钟内刷新token
+     *
+     * @param token
+     * @param minutes
+     * @return
+     */
+    public Token refreshUserToken(String token, Integer minutes) {
+        JwtContentInfo jwtContentInfo = getUserInfo(token);
+        //token过期时间小于5分钟则刷新token
+        return jwtContentInfo.getExpireDate().before(Date.from(LocalDateTime.now().plusMinutes(minutes).atZone(ZoneId.systemDefault()).toInstant()))
+                ? generateUserToken(jwtContentInfo, authServerProperties.getTokenInfo().getExpire())
+                : null;
+    }
 
 }

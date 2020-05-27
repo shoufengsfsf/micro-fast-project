@@ -30,9 +30,6 @@ public class JwtUtils {
 
     public static Token generateUserToken(JwtContentInfo jwtContentInfo, String privateKeyPath, int expire) {
 
-        LocalDateTime localDateTime = LocalDateTime.now().plusSeconds(expire);
-        Date date = Date.from(localDateTime.atZone(ZoneId.systemDefault()).toInstant());
-
         JwtBuilder jwtBuilder = Jwts.builder()
                 //设置主题
                 .setSubject(String.valueOf(jwtContentInfo.getUserId()))
