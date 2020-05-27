@@ -8,8 +8,8 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * @author shoufeng
  */
 @SpringBootApplication
-public class demoApplication {
+public class DemoApplication {
     public static void main(String[] args) {
-        SpringApplication.run(demoApplication.class, args);
+        SpringApplication.run(DemoApplication.class, args);
     }
 }
