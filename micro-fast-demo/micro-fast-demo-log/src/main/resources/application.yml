@@ -14,7 +14,7 @@ server:
 
 spring:
   application:
-    name: fast-demo-job
+    name: fast-demo-log
   profiles:
     active: dev
   jackson:
