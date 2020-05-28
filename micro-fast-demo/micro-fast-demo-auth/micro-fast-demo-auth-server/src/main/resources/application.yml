@@ -1,0 +1,40 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 7070
+
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        http-only: false
+
+spring:
+  application:
+    name: fast-demo-auth-server
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+      location: ./data/file
+
+micro:
+  fast:
+    auth:
+      server:
+        token-info:
+          expire: 7200
+          private-key: private.key
+          public-key: public.key
+
+
+
