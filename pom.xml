@@ -15,6 +15,7 @@
         <module>micro-fast-log</module>
         <module>micro-fast-common</module>
         <module>micro-fast-auth</module>
+        <module>micro-fast-doc</module>
     </modules>
     <packaging>pom</packaging>
     <description>快速开发脚手架</description>
@@ -46,6 +47,7 @@
         <hystrix.version>1.4.7.RELEASE</hystrix.version>
         <minio.version>3.0.10</minio.version>
         <xxljob.version>2.2.0</xxljob.version>
+        <swagger.version>2.9.2</swagger.version>
     </properties>
 
     <dependencyManagement>
