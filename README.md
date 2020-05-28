@@ -11,7 +11,7 @@
 | [权限模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-auth) | jwt               |
 | [日志模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-log/micro-fast-log-starter) | logback           |
 | 消息队列模块                                                 | rabbitmq          |
-| 文档模块                                                     | swagger           |
+| [文档模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-doc/micro-fast-swagger-starter) | swagger           |
 | [任务调度模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-job/micro-fast-job-xxl-starter) | xxl-job           |
 | [文件存储模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-file/micro-fast-file-minio-starter) | Minio             |
 | 代码生成器模块                                               |                   |
