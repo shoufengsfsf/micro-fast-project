@@ -8,7 +8,7 @@
 | 模块                                                         | 选用技术          |
 | ------------------------------------------------------------ | ----------------- |
 | [数据库模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-db/micro-fast-mybatis-plus-starter) | mybatis-plus      |
-| 权限模块                                                     | jwt               |
+| [权限模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-auth) | jwt               |
 | [日志模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-log/micro-fast-log-starter) | logback           |
 | 消息队列模块                                                 | rabbitmq          |
 | 文档模块                                                     | swagger           |
