@@ -7,7 +7,7 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.stereotype.Component;
 
 /**
- * seaweedfs配置参数
+ * minio配置参数
  *
  * @author shoufeng
  */
