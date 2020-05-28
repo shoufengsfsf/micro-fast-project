@@ -17,6 +17,7 @@
         <module>micro-fast-demo-job</module>
         <module>micro-fast-demo-log</module>
         <module>micro-fast-demo-auth</module>
+        <module>micro-fast-demo-doc</module>
     </modules>
     <packaging>pom</packaging>
 

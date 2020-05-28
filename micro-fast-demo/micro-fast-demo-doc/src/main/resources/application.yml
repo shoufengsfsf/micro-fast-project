@@ -1,0 +1,90 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 7070
+
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        http-only: false
+
+spring:
+  application:
+    name: fast-demo-doc
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+      location: ./data/file
+
+micro:
+  fast:
+    swagger:
+      #是否开启
+      enable: true
+      micro-fast-swagger-docket-list:
+        - enable: true
+          #host信息
+          host: 127.0.0.1
+          #分组名称
+          groupName: groupName第2个
+          #wagger会解析的包路径
+          basePackage: com.micro.fast.demo.doc.controller.docket2
+          micro-fast-swagger-api-info:
+            #版本
+            version: 版本02
+            #标题
+            title: 标题02
+            #描述
+            description: 描述02
+            #服务条款
+            termsOfServiceUrl: 服务条款02
+            #证书
+            license: 证书02
+            #证书地址
+            licenseUrl:  证书地址02
+            #联系人
+            contact:
+              name:  守风
+              url:   baidu.com
+              email: 111111@163.com
+          #是否开启
+        - enable: true
+          #host信息
+          host: 127.0.0.1
+          #分组名称
+          groupName: groupName第一个
+          #wagger会解析的包路径
+          basePackage: com.micro.fast.demo.doc.controller.docket1
+          micro-fast-swagger-api-info:
+            #版本
+            version: 版本01
+            #标题
+            title: 标题01
+            #描述
+            description: 描述01
+            #服务条款
+            termsOfServiceUrl: 服务条款01
+            #证书
+            license: 证书01
+            #证书地址
+            licenseUrl:  证书地址01
+            #联系人
+            contact:
+              name:  守风
+              url:   baidu.com
+              email: 111111@163.com
+
+
+
+
