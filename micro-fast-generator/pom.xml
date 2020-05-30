@@ -11,6 +11,9 @@
 
     <artifactId>micro-fast-generator</artifactId>
     <description>生成器模块</description>
+    <modules>
+        <module>micro-fast-generator-db-doc</module>
+    </modules>
     <packaging>pom</packaging>
 
 
