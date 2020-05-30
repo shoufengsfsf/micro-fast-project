@@ -17,6 +17,7 @@
         <module>micro-fast-auth</module>
         <module>micro-fast-doc</module>
         <module>micro-fast-mq</module>
+        <module>micro-fast-generator</module>
     </modules>
     <packaging>pom</packaging>
     <description>快速开发脚手架</description>
