@@ -1,0 +1,88 @@
+# Tomcat
+server:
+  tomcat:
+    uri-encoding: UTF-8
+    max-threads: 1000
+    min-spare-threads: 30
+  port: 7070
+
+  servlet:
+    context-path: /
+    session:
+      cookie:
+        http-only: false
+
+spring:
+  application:
+    name: fast-demo-mq
+  profiles:
+    active: dev
+  jackson:
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+      enabled: true
+      location: ./data/file
+
+  # RabbitMQ 配置项，对应 RabbitProperties 配置类
+  rabbitmq:
+    # RabbitMQ 服务的地址
+    host: 127.0.0.1
+    # RabbitMQ 服务的端口
+    port: 5672
+    # RabbitMQ 服务的账号
+    username: admin
+    # RabbitMQ 服务的密码
+    password: admin
+    template:
+      # 对应 RabbitProperties.Retry类
+      # =========发送重试=======
+      retry:
+        enabled: true # 开启发送机制
+        max-attempts: 3 # 最大重试次数。默认为 3 。
+        initial-interval: 1000 # 重试间隔，单位为毫秒。默认为 1000 。
+    listener:
+      simple:
+        # 对应 RabbitProperties.ListenerRetry 类
+        # =========消费重试=======
+        retry:
+          enabled: true # 开启消费重试机制
+          max-attempts: 3 # 最大重试次数。默认为 3 。
+          initial-interval: 1000 # 重试间隔，单位为毫秒。默认为 1000 。
+
+micro:
+  fast:
+    rabbit:
+      enable: true
+      binding-list:
+        - name: bindingName00111
+          #DIRECT_EXCHANGE模式交换机routingKey需要完全匹配
+          routingKey: kkk
+          queue:
+            name: queue00111
+          exchange:
+            exchangeTypeEnum: DIRECT_EXCHANGE
+            name: exchange00111
+        - name: bindingName00222
+          #FANOUT_EXCHANGE模式的交换机routingKey无意义
+          routingKey:
+          queue:
+            name: queue00222
+            arguments:
+              x-expires: 5000
+          exchange:
+            exchangeTypeEnum: FANOUT_EXCHANGE
+            name: exchange00222
+        - name: bindingName00333
+          #FANOUT_EXCHANGE模式的交换机routingKey无意义
+          routingKey:
+          queue:
+            name: queue00333
+          exchange:
+            exchangeTypeEnum: FANOUT_EXCHANGE
+            name: exchange00222
+
+
