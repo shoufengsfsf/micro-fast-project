@@ -10,10 +10,10 @@
 //
 //@Component
 //@RabbitListener(queues = {"direct_queue_00111"})
-//public class Demo01Consumer {
+//public class Demo04Consumer {
 //
 //    @RabbitHandler
 //    public void onMessage(String message) {
-//        System.out.println("Demo01Consumer接受到的消息: " + message);
+//        System.out.println("Demo04Consumer接受到的消息: " + message);
 //    }
 //}

@@ -9,11 +9,11 @@ import org.springframework.stereotype.Component;
  */
 
 @Component
-@RabbitListener(queues = {"queue00222"})
+@RabbitListener(queues = {"fanout_queue_00222"})
 public class Demo02Consumer {
 
     @RabbitHandler
     public void onMessage(String message) {
-        System.out.println("queue00222接受到的消息: " + message);
+        System.out.println("Demo02Consumer接受到的消息: " + message);
     }
 }

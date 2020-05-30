@@ -60,29 +60,34 @@ micro:
       binding-list:
         - name: bindingName00111
           #DIRECT_EXCHANGE模式交换机routingKey需要完全匹配
-          routingKey: kkk
+          routingKey: demo.direct.routingkey
           queue:
-            name: queue00111
+            name: direct_queue_00111
+            arguments:
+              #队列消息存活5秒
+              x-message-ttl: 5000
+              #绑定fanout死信交换机
+              x-dead-letter-exchange: demo_fanout_exchange_002
+              #由于demo绑定的死信交换机是fanout，所以x-dead-letter-routing-key可以不设置
+          #              x-dead-letter-routing-key: kkk
           exchange:
             exchangeTypeEnum: DIRECT_EXCHANGE
-            name: exchange00111
+            name: demo_direct_exchange_001
         - name: bindingName00222
           #FANOUT_EXCHANGE模式的交换机routingKey无意义
           routingKey:
           queue:
-            name: queue00222
-            arguments:
-              x-expires: 5000
+            name: fanout_queue_00222
           exchange:
             exchangeTypeEnum: FANOUT_EXCHANGE
-            name: exchange00222
+            name: demo_fanout_exchange_002
         - name: bindingName00333
           #FANOUT_EXCHANGE模式的交换机routingKey无意义
           routingKey:
           queue:
-            name: queue00333
+            name: fanout_queue_00333
           exchange:
             exchangeTypeEnum: FANOUT_EXCHANGE
-            name: exchange00222
+            name: demo_fanout_exchange_002
 
 

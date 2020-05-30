@@ -16,11 +16,8 @@ public class DemoProducer {
     @Resource
     private RabbitTemplate rabbitTemplate;
 
-    @PostConstruct
     public void sendMessage() {
-        rabbitTemplate.convertAndSend("exchange00111", "kkk", "exchange00111testetstest");
-        System.out.println("exchange00111发送消息: testetstest");
-        rabbitTemplate.convertAndSend("exchange00222", null, "exchange00222testetstest");
-        System.out.println("exchange00222发送消息: testetstest");
+        rabbitTemplate.convertAndSend("demo_direct_exchange_001", "demo.direct.routingkey", "testetstest");
+        System.out.println("demo_direct_exchange_001: testetstest");
     }
 }
