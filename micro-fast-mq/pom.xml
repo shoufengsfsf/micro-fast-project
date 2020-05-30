@@ -9,16 +9,10 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>micro-fast-demo</artifactId>
-    <description>快速开发框架使用案例</description>
+    <artifactId>micro-fast-mq</artifactId>
+    <description>消息队列模块</description>
     <modules>
-        <module>micro-fast-demo-db</module>
-        <module>micro-fast-demo-file</module>
-        <module>micro-fast-demo-job</module>
-        <module>micro-fast-demo-log</module>
-        <module>micro-fast-demo-auth</module>
-        <module>micro-fast-demo-doc</module>
-        <module>micro-fast-demo-mq</module>
+        <module>micro-fast-mq-rabbit-starter</module>
     </modules>
     <packaging>pom</packaging>
 
