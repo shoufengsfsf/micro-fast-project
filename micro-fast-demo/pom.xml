@@ -19,6 +19,9 @@
         <module>micro-fast-demo-auth</module>
         <module>micro-fast-demo-doc</module>
         <module>micro-fast-demo-mq</module>
+        <module>micro-fast-demo-discovery-nacos-producer</module>
+        <module>micro-fast-demo-discovery-nacos-consumer</module>
+        <module>micro-fast-demo-config</module>
     </modules>
     <packaging>pom</packaging>
 
