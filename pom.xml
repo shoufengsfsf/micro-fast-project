@@ -20,6 +20,7 @@
         <module>micro-fast-generator</module>
         <module>micro-fast-config</module>
         <module>micro-fast-discovery</module>
+        <module>micro-fast-office</module>
     </modules>
     <packaging>pom</packaging>
     <description>快速开发脚手架</description>
@@ -52,6 +53,9 @@
         <minio.version>3.0.10</minio.version>
         <xxljob.version>2.2.0</xxljob.version>
         <swagger.version>2.9.2</swagger.version>
+        <easypoi.version>4.1.3</easypoi.version>
+        <itextpdf.version>5.5.13.1</itextpdf.version>
+        <itext.asian.version>5.2.0</itext.asian.version>
     </properties>
 
     <dependencyManagement>
