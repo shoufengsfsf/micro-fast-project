@@ -1,6 +1,6 @@
 spring:
   application:
-    name: fast-admin-server
+    name: micro-fast-admin-server
   cloud:
     nacos:
       config:
