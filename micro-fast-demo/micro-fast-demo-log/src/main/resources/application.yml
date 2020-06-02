@@ -27,6 +27,13 @@ spring:
       enabled: true
       location: ./data/file
 
+  boot:
+    admin:
+      client:
+        url: http://127.0.0.1:8765/
+        username: admin
+        password: admin
+
 micro:
   fast:
     log:
@@ -34,5 +41,14 @@ micro:
       token-header: accessToken
       interceptor-order: -10
 
-
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: ALWAYS
+    logfile:
+      external-file: ./logs/${spring.application.name}/log_all.log
 

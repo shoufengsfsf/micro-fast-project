@@ -21,6 +21,7 @@
         <module>micro-fast-config</module>
         <module>micro-fast-discovery</module>
         <module>micro-fast-office</module>
+        <module>micro-fast-monitor</module>
     </modules>
     <packaging>pom</packaging>
     <description>快速开发脚手架</description>
@@ -56,6 +57,7 @@
         <easypoi.version>4.1.3</easypoi.version>
         <itextpdf.version>5.5.13.1</itextpdf.version>
         <itext.asian.version>5.2.0</itext.asian.version>
+        <spring.boot.admin.starter.client>2.2.2</spring.boot.admin.starter.client>
     </properties>
 
     <dependencyManagement>

@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: fast-admin-server
+  cloud:
+    nacos:
+      config:
+        server-addr: 127.0.0.1:8848
+        file-extension: yaml
+      discovery:
+        server-addr: 127.0.0.1:8848
+        metadata:
+          user:
+            name: ${spring.security.user.name}
+            password: ${spring.security.user.password}
+  #登录用户密码也可以配置在nocas中配置
+  security:
+    user:
+      name: admin
+      password: admin
+server:
+  port: 8765
