@@ -16,7 +16,7 @@
 | [文件存储模块](https://github.com/shoufengsfsf/micro-fast-project/tree/develop/micro-fast-file/micro-fast-file-minio-starter) | Minio             | ✅    | ✅    |
 | 代码生成器模块                                               |                   |      |      |
 | [数据库文档生成器模块](https://github.com/shoufengsfsf/micro-fast-project/tree/master/micro-fast-generator/micro-fast-generator-db-doc) |                   | ✅    | ✅    |
-| 应用监控模块                                                 | spring-boot-admin |      |      |
+| [应用监控模块](https://github.com/shoufengsfsf/micro-fast-project/tree/master/micro-fast-monitor/micro-fast-admin-server) | spring-boot-admin | ✅    | ✅    |
 | 注册中心模块                                                 | nacos             | ✅    | ❌    |
 | 动态配置模块                                                 | nacos             | ✅    | ❌    |
 | 服务调用模块                                                 | fegin、ribbon     |      |      |
