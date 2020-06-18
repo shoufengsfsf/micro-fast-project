@@ -1,7 +1,7 @@
 # micro-fast-project
 ## 简介
 
-原先的[fast-rest-project](https://github.com/shoufengsfsf/fast-rest-project)后端快速开发框架依赖越加越多，感觉脱离了我一开始创建项目的目的，micro-fast-project这个项目吸取上个项目的教训，每一类模块仅使用一种市面上常用技术，希望能达到项目小而快的初衷。
+自用快速开发框架
 
 ## 技术选型
 
